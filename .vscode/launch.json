@@ -1,0 +1,31 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "py: hello Rudi",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "cwd": "${workspaceFolder}/",
+      "args": [
+        "--name",
+        "Rudi",
+        "--settings",
+        "en"
+      ]
+    },
+    {
+      "name": "py: help",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/PythonCodeSnippet/main.py",
+      "cwd": "${workspaceFolder}/PythonCodeSnippet/",
+      "args": [
+        "-h"
+      ]
+    }
+  ]
+}
