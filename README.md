@@ -5,6 +5,10 @@ A small example program for a Python script that runs in a Docker container. The
 # Quick start
 The project needs `python`, `invoke`, `docker` and `docker-compose`. For details and information on the versions of the dependencies, see the [Contributing Guide](./CONTRIBUTING.md).
 
+## Building the docker containers
+```
+python ./task.py local.rebuild
+```
 
 # Get help from the main program
 
