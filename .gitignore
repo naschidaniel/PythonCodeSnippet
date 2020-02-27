@@ -5,3 +5,4 @@ logs/**/*
 # Files
 *.log
 *.pyc
+.vscode/settings.py

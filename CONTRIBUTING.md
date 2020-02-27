@@ -10,7 +10,7 @@ The aim of the software is to create an easily readable and clear structure. To 
 
 
 ## Development Setup
-You will need [python](https://www.python.org/) **version 3.7+**.
+You will need [python](https://www.python.org/) **version 3.7+**, [invoke](http://www.pyinvoke.org/installing.html) **version 1.4+**, [docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/).
 
 After cloning the repo, run:
 
