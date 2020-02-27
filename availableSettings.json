@@ -1,0 +1,10 @@
+{
+  "en": {
+    "name": "en",
+    "greeting": "Hello, my name is"
+  },
+  "de": {
+    "name": "de",
+    "greeting": "Hallo, mein Name ist"
+  }
+}
