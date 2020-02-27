@@ -8,6 +8,7 @@ import json
 from misc import argparse_module
 from misc import logger_module
 
+
 def main():
     """Main function of the program.
     """
@@ -28,6 +29,7 @@ def main():
     print('{} {}!'.format(settings['greeting'], name))
 
     logger.info('The program pythonCodeSnippet has run successfully.')
+
 
 if __name__ == '__main__':
     main()

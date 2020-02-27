@@ -8,6 +8,7 @@ A CodeSnippet for a argparse with a settings Module
 import argparse
 import sys
 
+
 def get_arguments(available_settings, logger):
     '''A function to proceed some parsed Arguments.
     available_settings = dict()

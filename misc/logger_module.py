@@ -9,6 +9,7 @@ import logging.config
 import os
 from datetime import datetime
 
+
 def start_logging():
     '''A function to start the logging.
     return: logger
