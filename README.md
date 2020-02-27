@@ -6,20 +6,20 @@ A small example program for a Python script that runs in a Docker container. The
 The project needs `python`, `invoke`, `docker` and `docker-compose`. For details and information on the versions of the dependencies, see the [Contributing Guide](./CONTRIBUTING.md).
 
 ## Building the docker containers
-```
+``` bash
 python task.py local.rebuild
 ```
 
 # Get help from the main program
 
-```
+``` bash
 python task.py local.python "main.py -h"
 ```
 
 
 # Example
 
-```
+``` bash
 python task.py local.python "main.py --name Rudi --settings en"
 ```
 Expected result: Hello my name is Rudi!
@@ -30,7 +30,7 @@ Expected result: Hello my name is Rudi!
 
 The available settings can be made in the `availableSettings.json` file.
 
-```
+``` bash
 vim program/availableSettings.json
 ```
 
