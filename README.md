@@ -1,20 +1,25 @@
 # Description
 
-A small Python code snippet which contains a module for argparse and logging.
+A small example program for a Python script that runs in a Docker container. The program contains an argparse and logging module.
+
+# Quick start
+The project needs `python`, `invoke`, `docker` and `docker-compose`. For details and information on the versions of the dependencies, see the [Contributing Guide](./CONTRIBUTING.md).
 
 
 # Get help from the main program
 
 ```
-python main.py -h
+python ./task.py local.python "main.py -h"
 ```
+
 
 # Example
 
 ```
-python main.py --name Rudi --settings en
+python ./task.py local.python "main.py --name Rudi --settings en"
 ```
 Expected result: Hello my name is Rudi!
+
 
 # Settings
 ## Program settings
@@ -22,7 +27,7 @@ Expected result: Hello my name is Rudi!
 The available settings can be made in the `availableSettings.json` file.
 
 ```
-vim availableSettings.json
+vim program/availableSettings.json
 ```
 
 
