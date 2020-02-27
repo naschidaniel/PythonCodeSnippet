@@ -7,20 +7,20 @@ The project needs `python`, `invoke`, `docker` and `docker-compose`. For details
 
 ## Building the docker containers
 ```
-python ./task.py local.rebuild
+python task.py local.rebuild
 ```
 
 # Get help from the main program
 
 ```
-python ./task.py local.python "main.py -h"
+python task.py local.python "main.py -h"
 ```
 
 
 # Example
 
 ```
-python ./task.py local.python "main.py --name Rudi --settings en"
+python task.py local.python "main.py --name Rudi --settings en"
 ```
 Expected result: Hello my name is Rudi!
 
