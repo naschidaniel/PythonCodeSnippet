@@ -14,6 +14,7 @@ def docker_compose(c, cmd, **kwargs):
         command.append(config_file)
 
     command.append(cmd)
+    command.insert(0, "export USERID=$UID && export GROUPID=$GID &&")
 
     return c.run(" ".join(command), **kwargs)
 

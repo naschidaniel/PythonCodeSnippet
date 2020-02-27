@@ -4,5 +4,6 @@ services:
   fedora:
     restart: always
     build: "./docker/"
+    user: "${USERID}:${GROUPID}"
     volumes:
       - ./program:/program
