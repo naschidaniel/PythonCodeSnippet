@@ -15,5 +15,6 @@ You will need [python](https://www.python.org/) **version 3.7+**, [invoke](http:
 After cloning the repo, run:
 
 ``` bash
-$ python main.py -h # To get help and to check if the Python is installed correctly.
+$ python task.py local.rebuild # Building the docker containers.
+$ python task.py local.python "main.py -h" # To get help and to check if the Python is installed correctly.
 ```
