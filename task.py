@@ -19,7 +19,7 @@ def docker_compose(c, cmd, **kwargs):
     return c.run(" ".join(command), **kwargs)
 
 @task
-def python(c, cmd, **kwargs):
+def python(c, cmd):
     """The function is used to start a command inside a container."""
     uid = "{}:{}".format(os.getuid(), os.getgid())
     return docker_compose(c, f"run -u {uid} fedora python3 /program/{cmd}", pty=True)
