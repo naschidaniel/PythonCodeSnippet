@@ -24,5 +24,4 @@ def start_logging():
     logging.config.fileConfig(logging_cfg_file, \
         disable_existing_loggers=False, \
         defaults={'logfilename' : logfile})
-    logger = logging.getLogger()
-    return logger
+    logging.getLogger()

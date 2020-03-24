@@ -6,10 +6,11 @@ A CodeSnippet for a argparse with a settings Module
 """
 
 import argparse
+import logging
 import sys
 
 
-def get_arguments(available_settings, logger):
+def get_arguments(available_settings):
     '''A function to proceed some parsed Arguments.
     available_settings = dict()
     logger
@@ -25,13 +26,13 @@ def get_arguments(available_settings, logger):
     options = parser.parse_args()
     print(options)
 
-    logger.debug('options.name: %s', options.name)
-    logger.debug('options.settings: %s', options.settings)
+    logging.debug('options.name: %s', options.name)
+    logging.debug('options.settings: %s', options.settings)
 
     if options.settings in available_settings.keys():
         settings = available_settings[options.settings]
     else:
-        logger.error('The settings cannot be found in the settings file.')
+        logging.error('The settings cannot be found in the settings file.')
         sys.exit(1)
 
     arguments = {
