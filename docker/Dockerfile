@@ -1,6 +1,5 @@
-FROM fedora
+FROM python:buster
 
-RUN dnf -y update
-RUN dnf install python3
+ENV PYTHONUNBUFFERED 1
 
 WORKDIR /program
